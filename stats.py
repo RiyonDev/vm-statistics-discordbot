@@ -5,10 +5,10 @@ import psutil
 import time
 
 # Your bot's token
-TOKEN = 'MTIyMjgwMzg5NTM3NDQ1MDY5OA.G1kOHZ.iiZyoktSLeX7IcYKdtmI3CHxTWL38C-Li9vgCk'
+TOKEN = ''
 
 # Channel ID to send the message to
-CHANNEL_ID = 1222878323177422978  # Replace with your channel ID
+CHANNEL_ID =   # Replace with your channel ID
 
 # Image URL for the embed thumbnail
 IMAGE_URL = ""
