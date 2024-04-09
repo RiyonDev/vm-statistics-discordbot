@@ -1,7 +1,7 @@
 # :bird: vm-statistics-discordbot
 
 
-official script for installing vm-statistics-discordbot. 
+Official script for installing vm-statistics-discordbot. 
 
 
 ## Features
