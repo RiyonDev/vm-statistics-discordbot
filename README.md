@@ -22,6 +22,9 @@ To use the installation scripts, simply run this command as root. The script wil
 bash <(curl -s https://statscript.riyon.xyz)
 ```
 
+## Keeping the bot online
+
+Run the script in a [Screen](https://linuxize.com/post/how-to-use-linux-screen/) to keep the bot online
 
 ## Copyright ✨
 
