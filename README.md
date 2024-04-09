@@ -1,0 +1,33 @@
+# :bird: vm-statistics-discordbot
+
+
+official script for installing vm-statistics-discordbot. 
+
+
+## Features
+
+- Automatic installation of the vm-statistics-discordbot (dependencies, bot).
+- Automatically update the stats in the choosen channel.
+- Use !vmstats command to get the statistics to any channel.
+
+## Help and support
+
+For help and support regarding the bot , you can massege me on [Discord](https://discord.com/users/1086661126403657869).
+
+## Supported installations
+
+List of supported installation setups for panel and Wings (installations supported by this installation script).
+
+
+## Using the installation scripts
+
+To use the installation scripts, simply run this command as root. The script will ask you every for the things needed (bot token, channel id, banner url if needed)
+
+```bash
+bash <(curl -s https://statscript.riyon.xyz)
+```
+
+
+## Copyright ✨
+
+Copyright (C) 2023 - 2024, Riyon basitha, <Basithariyon@gmail.com>
