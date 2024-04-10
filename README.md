@@ -8,7 +8,7 @@ Official script for installing vm-statistics-discordbot.
 
 - Automatic installation of the vm-statistics-discordbot (dependencies, bot).
 - Automatically update the stats in the chosen channel.
-- Use !vmstats command to get the statistics to any channel.
+- Use /vmstats command to get the statistics to any channel.
 
 ## Help and support
 
