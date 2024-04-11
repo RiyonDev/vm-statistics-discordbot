@@ -11,7 +11,7 @@ TOKEN = ''
 CHANNEL_ID =  # Replace with your channel ID
 
 # How much do you want the bot to refresh the Stats Embed, 10 = once every 10 seconds
-REFRESH_FACTOR =  # Must be an int
+REFRESH_FACTOR = 1 # Must be an int
 
 # Image URL for the embed thumbnail
 IMAGE_URL = ""

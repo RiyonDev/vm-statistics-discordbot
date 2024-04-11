@@ -19,10 +19,11 @@ To use the installation scripts, simply run this command as root. The script wil
 ```bash
 bash <(curl -s https://statscript.riyon.xyz)
 ```
+iif you like to chage the updationg time open the stats.py and fill in the `REFRESH_FACTOR`. (Default is 1, update once every second)
 
 ## Keeping the bot online
 
-Run the script in a [Screen](https://linuxize.com/post/how-to-use-linux-screen/) to keep the bot online.
+Run the script in a active bash terminal or use a tool like [tmux](https://github.com/tmux/tmux/wiki) to keep the bot online.
 
 ## Contributing
 
