@@ -8,7 +8,7 @@ import time
 TOKEN = ''
 
 # Channel ID to send the message to
-CHANNEL_ID = 00000 # Replace with your channel ID
+CHANNEL_ID = 00000  # Replace with your channel ID
 
 # Image URL for the embed thumbnail
 IMAGE_URL = ""
@@ -17,7 +17,7 @@ intents = discord.Intents.default()
 intents.members = True
 intents.typing = True
 intents.presences = True
-intents.message_content = True
+intents.messages = True
 bot = commands.Bot(command_prefix="/", intents=intents)
 
 def get_server_info():
@@ -52,7 +52,7 @@ def get_server_info():
         "cpu_usage": cpu_usage
     }
 
-async def send_server_stats(channel, interaction):
+async def send_server_stats(channel):
     server_info = get_server_info()
 
     embed = discord.Embed(title="Linux Server Statistics", color=0x00ff00)
@@ -69,12 +69,8 @@ async def send_server_stats(channel, interaction):
     embed.set_thumbnail(url=IMAGE_URL)
     embed.set_footer(text="Copyright Riyondev © 2024")
 
-    if interaction is not None:
-        message = embed
-        return message
-    else:
-        message = await channel.send(embed=embed)
-        return message
+    message = await channel.send(embed=embed)
+    return message
 
 async def update_server_stats(channel, message):
     server_info = get_server_info()
@@ -95,31 +91,23 @@ async def update_server_stats(channel, message):
 
     await message.edit(embed=embed)
 
-@tasks.loop(seconds=1)  #update every 1 second
+@bot.event
+async def on_ready():
+    print(f'{bot.user} has connected to Discord!')
+    channel = bot.get_channel(CHANNEL_ID)
+    message = await send_server_stats(channel)
+    send_stats.start(channel, message)
+
+@tasks.loop(seconds=10)  #update every 10 second
 async def send_stats(channel, message):
     if channel:  # Check if the channel was found
         await update_server_stats(channel, message)
     else:
         print("Channel not found. Please check the CHANNEL_ID.")
 
-@bot.tree.command(name="vmstats", description="Displays server statistics in the same channel where the command was issued.")
-async def vmstats(interaction: discord.Interaction):
-    await interaction.response.defer()
-    message = await send_server_stats(CHANNEL_ID, interaction)
-    await interaction.followup.send(embed=message)
-
 @bot.command(name='vmstats', help='Displays server statistics in the same channel where the command was issued.')
 async def vmstats(ctx):
-    message = await send_server_stats(ctx.channel, interaction=None)
+    message = await send_server_stats(ctx.channel)
     await update_server_stats(ctx.channel, message)
-
-@bot.event
-async def on_ready():
-    print(f'{bot.user} has connected to Discord!')
-    channel = bot.get_channel(CHANNEL_ID)
-    message = await send_server_stats(channel, interaction=None)
-    send_stats.start(channel, message)
-    await bot.tree.sync()
-    print("Slash Synced!")
 
 bot.run(TOKEN)
