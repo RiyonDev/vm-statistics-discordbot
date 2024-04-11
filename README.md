@@ -10,7 +10,7 @@ Script for installing vm-statistics-discordbot.
 
 ## Help and support
 
-For help and support regarding the bot, you can message me on [Discord](https://discord.com/users/1086661126403657869).
+For help and support regarding the bot, you can message me on [Discord](https://discord.com/users/1201986033206702140).
 
 ## Using the installation scripts
 
@@ -36,7 +36,7 @@ We welcome contributions to improve the vm-statistics-discordbot project! Here's
 6. **Review and Collaborate**: Your PR will undergo review by project maintainers. Collaborate with them to address any feedback or suggestions for improvement.
 7. **Merge Your Changes**: Once your PR is approved and all discussions are resolved, a project maintainer will merge your changes into the main branch. Congratulations, your contribution is now part of the vm-statistics-discordbot project!
 
-If you have any questions or need assistance with the contribution process, feel free to reach out to me on [Discord](https://discord.com/users/1086661126403657869).
+If you have any questions or need assistance with the contribution process, feel free to reach out to me on [Discord](https://discord.com/users/1201986033206702140).
 
 Thank you for your interest in contributing to vm-statistics-discordbot! I appreciate your support in making this project even better.
 
