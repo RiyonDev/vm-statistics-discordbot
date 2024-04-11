@@ -8,7 +8,7 @@ import time
 TOKEN = ''
 
 # Channel ID to send the message to
-CHANNEL_ID = 00000  # Replace with your channel ID
+CHANNEL_ID =   # Replace with your channel ID
 
 # Image URL for the embed thumbnail
 IMAGE_URL = ""
