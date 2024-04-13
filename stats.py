@@ -4,7 +4,7 @@ import subprocess
 import psutil
 import time
 
-# Your bot's token
+# Your bot's token 
 TOKEN = ''
 
 # Channel ID to send the message to
