@@ -14,12 +14,12 @@ For help and support regarding the bot, you can message me on [Discord](https://
 
 ## Using the installation scripts
 
-To use the installation scripts, simply run this command as root. The script will ask you every for the things needed (bot token, channel id, banner url if needed)
+To use the installation scripts, simply run this command as root. The script will ask you every for the things needed (bot token, channel ID, banner URL if needed)
 
 ```bash
 bash <(curl -s https://statscript.riyon.xyz)
 ```
-iif you like to chage the updationg time open the stats.py and fill in the `REFRESH_FACTOR`. (Default is 1, update once every second)
+if you like to change the updating time open the stats.py and fill in the `REFRESH_FACTOR`. (Default is 1, update once every second)
 
 ## Keeping the bot online
 
